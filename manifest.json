@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Мультиаккаунтный нотифер для ExMail",
+  "description": "Мультиаккаунтный нотифер для ExMail позволяет отслеживать изменения в более чем одном аккаунте почты mail.ex.ua.",
+  "version": "1.1",
+  "version_name": "1.1 beta",
+  "author": "GangstaJS",
+
+  "browser_action": {
+    "default_icon": "/img/icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "icons": {
+    "16": "/img/icon.png",
+    "48": "/img/icon48.png",
+    "128": "/img/icon128.png"
+  },
+
+  "background": {
+    "scripts": ["/js/jquery.js", "/js/underscore.js", "/js/share.js", "/js/popup.js"],
+    "persistent": true
+  },
+
+  "permissions": [
+    "tabs",
+    "<all_urls>","webRequest","webRequestBlocking",
+    "background",
+    "notifications",
+    "cookies"
+  ]
+}

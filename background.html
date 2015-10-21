@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Мультиаккаунтный нотифер для ExMail (v0.01)</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/underscore.js"></script>
+	<script type="text/javascript" src="/js/share.js"></script>
+	<script type="text/javascript" src="/js/err.js"></script>
+	<script type="text/javascript" src="/js/manage_accaunts.js"></script>
+</head>
+<body>
+
+<section class="content">
+	<h2>Мультиаккаунтный нотифер для ExMail (v0.01)</h2>
+
+	<div class="pure-form">
+		<input type="text" name="login" placeholder="Логин">
+    	<input type="password" placeholder="Пароль">
+		<button class="pure-button pure-button-primary" id="add_accaunt">Добавить</button>
+
+		<div id="err" class="error_bl"></div>
+	</div>
+
+	<div id="kp_there" class="pure-form kp_block">
+		<div>
+			<img id="captcha">
+		</div>
+		<input type='text' name='captcha_value' maxlength='16' autocomplete='off' placeholder="Проверочное слово">
+		<br>
+		<br>
+		<button class="pure-button" id="refresh_captcha">Обновить проверочное слово</button>
+		<input type='hidden' name='captcha_token'>
+	</div>
+
+	<ul id="accaunts_list" class="user_list"></ul>
+
+	<small>Данное расширение не хранит ваш пароль для входа в почту, а использует его для авторизации один раз, после чего удаляет.</small>
+
+</section>
+
+<div class="support">Поддержка: <a href="mailto:notifer@ex.ua">notifer@ex.ua</a>, Автор: GangstaJS. Рекомендуем: <a href="http://getnote.io/" target="_blank">GetNote</a></div>
+
+</body>
+</html>

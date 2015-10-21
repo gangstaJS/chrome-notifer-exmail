@@ -1,0 +1,111 @@
+body {
+	font-family: arial;
+	font-size: 16px;
+}
+
+.content {
+	margin: 0 auto;
+	width: 930px;
+	font-size: 13px;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.user_list {
+	margin-top: 30px;
+	padding: 0;
+}
+
+.user_list li {
+	list-style: none;
+	padding: 0px 10px;
+	line-height: 50px;
+	font-size: 16px;
+	border-top: 1px solid #f1f1f1;
+	overflow: hidden;
+}
+
+.user_list li > b {
+	float: left;
+}
+
+.remove_acc {
+	position: relative;
+	top: 8px;
+	float: right;
+}
+
+/**/
+
+.popup {
+	font-size: 13px;
+	padding: 10px;
+	min-width: 300px;
+}
+
+.user_pop_list {
+	padding: 0;
+}
+
+.user_pop_list > li {
+	padding: 0 10px;
+	list-style: none;
+	line-height: 30px;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.user_pop_list > li:hover {
+	background: #f1f1f1;
+}
+
+.user_pop_list > li > b {
+	color: rgb(223, 117, 20);
+	float: right;
+}
+
+/**/
+
+.kp_block {
+	margin-top: 20px;
+	display: none;
+}
+
+.kp_block  img {
+	border: 1px solid #f1f1f1;
+}
+
+.error_bl {
+	color: rgb(223, 117, 20);
+	font-weight: bold;
+	padding: 5px;
+}
+
+/**/
+
+.support {
+	position: absolute;
+	left: 30px; bottom: 30px;
+}
+
+#settings {
+	font-size: 10px;
+}
